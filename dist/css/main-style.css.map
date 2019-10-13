@@ -1,0 +1,1 @@
+{"version":3,"sources":["main-style.scss","main-style.css"],"names":[],"mappings":"AAAA;EACE,SAAS;ACCX;;ADFA;EAGI,sBAAsB;EACtB,aAAa;ACGjB","file":"main-style.css","sourcesContent":["body{\n  margin: 0;\n  h1{\n    background-color: aqua;\n    padding: 20px;\n  }\n}","body {\n  margin: 0;\n}\n\nbody h1 {\n  background-color: aqua;\n  padding: 20px;\n}\n"]}

@@ -1,0 +1,47 @@
+/* Start Navbar */
+.navbar {
+  padding : 2.25em 1em 0;
+  @media (max-width : $max-sm) {
+    padding : 1em;
+  }
+
+  .navbar-brand {
+    margin-right : 2em;
+  }
+
+  .nav-item {
+    .nav-link {
+      color : $main-color;
+
+      &:hover,
+      &:active,
+      &:focus {
+        color : $primary-color;
+      }
+
+      @media (max-width : $max-sm) {
+        padding-top    : 1em;
+        padding-bottom : 0;
+      }
+    }
+  }
+
+  .social {
+    .fa {
+      background-color : #000000;
+      color            : #ffffff;
+      padding          : 0.25em;
+
+      &:hover {
+        color : $primary-color;
+      }
+    }
+
+    @media (max-width : $max-sm) {
+      margin-top : 20px;
+    }
+  }
+
+}
+/* End Navbar */
+

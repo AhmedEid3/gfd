@@ -1,0 +1,12 @@
+/*Start Sponser*/
+.sponsers {
+  background-color: $sponser-color;
+  img {
+    padding: 4.6em 0;
+    @media (max-width: $max-med) {
+      padding: 2em 0;
+    }
+  }
+
+}
+/*End Sponser*/

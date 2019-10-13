@@ -1,58 +1,151 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>GFD</title>
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/main-style.min.css">
-</head>
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<!doctype html><html lang="en"><head>  <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>GFD</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/main-style.min.css"></head><body>  <!--Start Navbar-->
+<nav class="navbar navbar-expand-md navbar-light">
+  <div class="container">
+
+    <a class="navbar-brand" href="#">
+      <img src="images/logo.png" alt="logo" width="48" height="48" />
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
+            aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse" id="navbar">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+
+          <a class="nav-link" href="#">Portfolio</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-             aria-haspopup="true" aria-expanded="false">
-            Dropdown
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
+          <a class="nav-link" href="#">Testimonials</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          <a class="nav-link" href="#">Contact</a>
         </li>
       </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
+      <!--      Start Social-->
+      <div class="social">
+        <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+      </div>
     </div>
-  </nav>
+    <!--    End Social-->
+  </div>
+</nav>
+<!--End Navbar-->
+  <!--Start Home Slider-->
+<div class="container">
+  <div class="row home-slider align-items-center">
 
 
-  <!--Scripts-->
-  <script src="js/jquery-3.3.1.slim.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-</body>
-</html>
+    <div class="col-sm-6 position-absolute">
+      <div id="home-slider" class="carousel slide carousel-fade" data-ride="carousel">
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="carousel-caption text-dark text-left">
+              <h5 class="h3">
+                First Slide “I’ve worked with dozens of designers
+                over the decades and Gui is at the top.”
+              </h5>
+              <p>Brian Ericksson</p>
+              <div>CEO - Cardwell Beach</div>
+              <div>New York City, US</div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-caption text-left text-dark">
+              <h5 class="h3">
+                Second Slide “I’ve worked with dozens of designers
+                over the decades and Gui is at the top.”
+              </h5>
+              <p>Brian Ericksson</p>
+              <div>CEO - Cardwell Beach</div>
+              <div>
+                New York City, US
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+
+            <div class="carousel-caption text-left text-dark">
+              <h5 class="h3">
+                Third Slide “I’ve worked with dozens of designers
+                over the decades and Gui is at the top.”
+              </h5>
+              <p>Brian Ericksson</p>
+              <div>
+                CEO - Cardwell Beach
+              </div>
+              <div>
+                New York City, US
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <ol class="carousel-indicators">
+          <li data-target="#home-slider" data-slide-to="0" class="active"></li>
+          <li data-target="#home-slider" data-slide-to="1"></li>
+          <li data-target="#home-slider" data-slide-to="2"></li>
+          <li data-target="#home-slider" data-slide-to="3"></li>
+          <li data-target="#home-slider" data-slide-to="4"></li>
+          <li data-target="#home-slider" data-slide-to="5"></li>
+          <li data-target="#home-slider" data-slide-to="6"></li>
+          <li data-target="#home-slider" data-slide-to="7"></li>
+          <li data-target="#home-slider" data-slide-to="8"></li>
+          <li data-target="#home-slider" data-slide-to="9"></li>
+          <li data-target="#home-slider" data-slide-to="10"></li>
+          <li data-target="#home-slider" data-slide-to="11"></li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="col-12">
+      <img src="images/gb.png" class="img-fluid" />
+    </div>
+  </div>
+</div>
+<!--End Home Slider-->
+  <!--Start Sponsers-->
+<div class="sponsers">
+  <div class="container">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-sm-4 col-md">
+        <img src="images/google.png" class="mx-auto d-block" width="80" alt="google">
+      </div>
+      <div class="col-sm-4 col-md">
+        <img src="images/mercedes.png" class="mx-auto d-block" width="92" alt="mercedes" />
+      </div>
+      <div class="col">
+        <img src="images/ibm.png" class="mx-auto d-block" width="80" alt="ibm" />
+
+      </div>
+      <div class="col-sm-4 col-md">
+        <img src="images/reebok.png" class="mx-auto d-block" width="100" alt="reebok" />
+      </div>
+      <div class="col-sm-4 col-md">
+        <img src="images/bcg.png" class="mx-auto d-block" width="62" alt="bcg" />
+      </div>
+    </div>
+  </div>
+</div>
+<!--End Sponsers-->  
+<!--Scripts-->
+<script src="js/jquery-3.3.1.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script></body></html>

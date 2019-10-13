@@ -71,6 +71,32 @@ function cssMin() {
         .pipe(notify("CSS Min Task Finished"));
 }
 
+// Bootstrap responsive font Task
+function bootstrap() {
+    return gulp
+        .src("node_modules/bootstrap/scss/**/*.scss")
+        .pipe(sourcemaps.init())
+        .pipe(sass({outputStyle: "expanded"}))
+        //.pipe(autoprefixer("last 2 version"))
+        .pipe(concat("bootstrap.css"))
+        .pipe(sourcemaps.write("."))
+        .pipe(gulp.dest(paths.dist.css))
+        .pipe(connect.reload())
+        .pipe(notify("bootstrap Task Finished"));
+}
+
+// Bootstrap Min Task
+function bootstrap_min() {
+    return gulp
+        .src("node_modules/bootstrap/scss/**/*.scss")
+        .pipe(sass({outputStyle: "compressed"}))
+        //.pipe(autoprefixer("last 2 version"))
+        .pipe(concat("bootstrap.min.css"))
+        .pipe(gulp.dest(paths.dist.css))
+        .pipe(connect.reload())
+        .pipe(notify("bootstrap Min Task Finished"));
+}
+
 // Js Task
 function js() {
     return gulp
@@ -122,6 +148,13 @@ function watch() {
 // Exports Tasks to can access it from other files or enviroments
 exports.connects = connects;
 exports.watch = watch;
+exports.html = html;
+exports.css = css;
+exports.cssMin = cssMin;
+exports.js = js;
+exports.images = images;
+exports.bootstrap = bootstrap;
+exports.bootstrap_min = bootstrap_min;
 
 // Default Task
 exports.default = gulp.parallel(connects, watch, html, css, cssMin, js, images);

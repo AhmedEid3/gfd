@@ -11,7 +11,7 @@
     justify-content : start;
     padding-left    : 0;
     margin-right    : initial;
-    margin-left     : 15px;
+    margin-left     : 0;
 
     li {
       border           : 1px solid transparent;
@@ -31,6 +31,10 @@
   .carousel-item {
     .carousel-caption {
       position : static;
+      color: $font-color;
+      .h1 {
+        margin-bottom: 38px;
+      }
     }
   }
 }

@@ -1,5 +1,81 @@
+/*Global Settings*/
 body {
   min-height: 1500px;
+  font-family: 'Raleway', sans-serif;
+  color: #1B1F23;
+}
+
+/*Font-size*/
+h1, .h1, h2, .h2 {
+  font-weight: 800;
+}
+
+h3, .h3, h4, .h4, button, .btn {
+  font-weight: 700;
+}
+
+p, .p {
+  font-weight: 500;
+}
+
+div, .div, span, .span {
+  font-weight: 400;
+}
+
+h1, .h1 {
+  font-size: 3rem;
+}
+
+h2, .h2 {
+  font-size: 2.5rem;
+}
+
+h3, .h3 {
+  font-size: 1.5rem;
+}
+
+h4, .h4 {
+  font-size: 1.125rem;
+}
+
+p, .p {
+  font-size: 1.5rem;
+  letter-spacing: 0.86px;
+  line-height: 1.1;
+}
+
+div, .div {
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+span, .span {
+  font-size: 0.875rem;
+}
+
+button, .btn {
+  font-size: 1rem;
+}
+
+/*Text-colors*/
+.text-main-color {
+  color: #2FCCF6;
+}
+
+.btn {
+  padding: 0.8rem 2.5rem;
+  border-radius: 2rem;
+}
+
+.btn-outline-primary {
+  color: #2FCCF6;
+  border-color: #2FCCF6;
+}
+
+.btn-outline-primary:hover, .btn-outline-primary:not(:disabled):not(.disabled).active {
+  color: #fff;
+  background-color: #2FCCF6;
+  border-color: #2FCCF6;
 }
 
 /* Start Navbar */
@@ -18,7 +94,7 @@ body {
 }
 
 .navbar .nav-item .nav-link {
-  color: #23282E;
+  color: #1B1F23;
 }
 
 .navbar .nav-item .nav-link:hover, .navbar .nav-item .nav-link:active, .navbar .nav-item .nav-link:focus {
@@ -70,7 +146,7 @@ body {
           justify-content: start;
   padding-left: 0;
   margin-right: initial;
-  margin-left: 15px;
+  margin-left: 0;
 }
 
 .home-slider .carousel-indicators li {
@@ -89,6 +165,11 @@ body {
 
 .home-slider .carousel-item .carousel-caption {
   position: static;
+  color: #1B1F23;
+}
+
+.home-slider .carousel-item .carousel-caption .h1 {
+  margin-bottom: 38px;
 }
 
 /*End Home Slider*/
@@ -108,5 +189,43 @@ body {
 }
 
 /*End Sponser*/
+/*
+Start User Interface*/
+.user-interface {
+  padding: 100px 0;
+}
+
+.user-interface h2 {
+  max-width: 520px;
+  margin-bottom: 1rem;
+}
+
+.user-interface p {
+  margin-bottom: 2.5rem;
+}
+
+.user-interface .card {
+  margin-bottom: 2rem;
+  padding: 3.5rem 0;
+}
+
+.user-interface .card img {
+  margin-bottom: 1.5rem;
+}
+
+.user-interface .card .card-body {
+  padding: 0 2.5rem;
+}
+
+@media (min-width: 992px) {
+  .user-interface .card-up {
+    position: absolute;
+    right: 3.5rem;
+    top: -50%;
+  }
+}
+
+/*
+End User Interface*/
 
 /*# sourceMappingURL=main-style.css.map */

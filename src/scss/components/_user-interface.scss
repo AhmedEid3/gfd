@@ -1,0 +1,35 @@
+/*
+Start User Interface*/
+.user-interface {
+  padding: 100px 0;
+  h2 {
+    max-width: 520px;
+    margin-bottom: 1rem;
+  }
+  p {
+    margin-bottom: 2.5rem;
+  }
+  .card {
+    //border: none;
+    margin-bottom: 2rem;
+    padding: 3.5rem 0;
+    img {
+      margin-bottom: 1.5rem;
+    }
+    .card-body {
+      padding: 0 2.5rem;
+    }
+  }
+  .card-up {
+    @media (min-width: $min-lg) {
+      position: absolute;
+      right: 3.5rem;
+      top: -50%;
+    }
+  }
+
+}
+
+
+/*
+End User Interface*/

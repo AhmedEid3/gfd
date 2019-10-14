@@ -1,3 +1,67 @@
+/*Global Settings*/
 body {
   min-height: 1500px;
+  font-family: 'Raleway', sans-serif;
+  color: $font-color;
+}
+/*Font-size*/
+%font-extrabold {
+  font-weight: 800;
+}
+%font-bold{
+  font-weight: 700;
+}
+%font-medium{
+  font-weight: 500;
+}
+%font-regular {
+  font-weight: 400;
+}
+
+h1, .h1 {
+  font-size: $h1-font-size;
+  @extend %font-extrabold;
+}
+
+h2, .h2 {
+  font-size: $h2-font-size;
+  @extend %font-extrabold;
+}
+
+h3, .h3 {
+  font-size: $h3-font-size;
+  @extend %font-bold;
+}
+
+h4, .h4 {
+  font-size: $h4-font-size;
+  @extend %font-bold;
+}
+
+p, .p {
+  font-size: $p-font-size;
+  letter-spacing: 0.86px;
+  line-height: 1.1;
+  @extend %font-medium;
+}
+
+div, .div {
+  font-size: $div-font-size;
+  line-height: 1.2;
+  @extend %font-regular;
+}
+
+span, .span {
+  font-size: $span-font-size;
+  @extend %font-regular;
+}
+
+button, .btn {
+  font-size: $btn-font-size;
+  @extend %font-bold;
+}
+
+/*Text-colors*/
+.text-main-color {
+  color: $primary-color;
 }

@@ -1,0 +1,15 @@
+.btn {
+  padding: 0.8rem 2.5rem;
+  border-radius: 2rem;
+}
+
+.btn-outline-primary {
+  color: $primary-color;
+  border-color: $primary-color;
+  &:hover,
+  &:not(:disabled):not(.disabled).active{
+    color: #fff;
+    background-color: $primary-color;
+    border-color: $primary-color;
+  }
+}

@@ -62,6 +62,10 @@ button, .btn {
   color: #2FCCF6;
 }
 
+.text-muted {
+  color: #BEC1C5 !important;
+}
+
 .btn {
   padding: 0.8rem 2.5rem;
   border-radius: 2rem;
@@ -249,6 +253,27 @@ End Freelancing Platform*/
 Start Client Comments*/
 .client-comments {
   background-color: #23282E;
+  padding: 3.5rem 0 3rem;
+  color: #ffffff;
+}
+
+.client-comments img {
+  float: right;
+}
+
+@media (max-width: 767.98px) {
+  .client-comments img {
+    float: none;
+    max-width: 100%;
+    margin: auto;
+    display: block;
+    margin-bottom: 1rem;
+  }
+}
+
+.client-comments .p {
+  font-size: 21px;
+  font-weight: 700;
 }
 
 /*

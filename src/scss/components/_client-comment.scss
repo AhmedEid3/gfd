@@ -2,6 +2,23 @@
 Start Client Comments*/
 .client-comments{
   background-color: $main-color;
+  padding: 3.5rem 0 3rem;
+  color: #ffffff;
+
+  img {
+    float: right;
+    @media (max-width: $max-sm) {
+      float: none;
+      max-width: 100%;
+      margin: auto;
+      display: block;
+      margin-bottom: 1rem;
+    }
+  }
+  .p {
+    font-size: 21px;
+    font-weight: 700;
+  }
 }
 /*
 End Client Comments*/

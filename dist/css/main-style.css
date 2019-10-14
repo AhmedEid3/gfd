@@ -67,7 +67,7 @@ button, .btn {
 }
 
 .btn {
-  padding: 0.8rem 2.5rem;
+  padding: 0.7rem 2rem;
   border-radius: 2rem;
 }
 
@@ -80,6 +80,11 @@ button, .btn {
   color: #fff;
   background-color: #2FCCF6;
   border-color: #2FCCF6;
+}
+
+.btn-sm {
+  padding: 0.4rem 1.5rem;
+  border-radius: 1.5rem;
 }
 
 /* Start Navbar */
@@ -132,6 +137,7 @@ button, .btn {
 /*Start Home Slider*/
 .home-slider {
   position: relative;
+  overflow: hidden;
 }
 
 @media (max-width: 991.98px) {
@@ -222,6 +228,12 @@ Start User Interface*/
   padding: 0 2.5rem;
 }
 
+@media (max-width: 1199.98px) {
+  .user-interface .card .card-body {
+    padding: 0 1.5rem;
+  }
+}
+
 @media (min-width: 992px) {
   .user-interface .card-up {
     position: absolute;
@@ -281,6 +293,7 @@ End Client Comments*/
 /*
 Start Slider Secondary*/
 .slider-secondary {
+  overflow: hidden;
   padding: 15rem 0 4rem;
 }
 
@@ -345,6 +358,12 @@ Start Getting Touch*/
   padding: 3rem 2.5rem 2.5rem 2.5rem;
 }
 
+.getting-touch form .btn {
+  max-width: 100%;
+  margin: auto;
+  display: block;
+}
+
 /*
 End Getting Touch*/
 /*
@@ -352,6 +371,7 @@ Start Footer*/
 .footer {
   position: relative;
   background-color: #23282E;
+  color: #ffffff;
   padding: 6rem 0 4rem;
 }
 
@@ -361,6 +381,47 @@ Start Footer*/
   right: 0;
   top: 30px;
   border: 1px solid #979797;
+}
+
+.footer a:hover {
+  color: #2FCCF6;
+}
+
+.footer .span {
+  margin-bottom: 7px;
+  display: block;
+}
+
+.footer .list-unstyled li {
+  padding: 5px;
+}
+
+.footer .list-unstyled li a {
+  color: #ffffff;
+}
+
+.footer .list-unstyled li a:hover, .footer .list-unstyled li a:active {
+  color: #2FCCF6;
+}
+
+.footer form .form-control {
+  max-width: 280px;
+}
+
+.footer .social .fa {
+  width: 2rem;
+  text-align: center;
+  float: right;
+  margin-left: 10px;
+  background-color: #2FCCF6;
+  color: #000000;
+  padding: 0.25em;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.footer .social .fa:hover {
+  color: #ffffff;
 }
 
 /*

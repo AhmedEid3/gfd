@@ -1,6 +1,7 @@
 /*Start Home Slider*/
 .home-slider {
   position : relative;
+  overflow: hidden;
   @media (max-width: $max-med) {
     align-items: start !important;
   }

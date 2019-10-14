@@ -1,0 +1,16 @@
+/*
+Start Footer*/
+.footer{
+  position: relative;
+  background-color: $main-color;
+  padding: 6rem 0 4rem;
+  .line{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 30px;
+    border: 1px solid #979797;
+  }
+}
+/*
+End Footer*/

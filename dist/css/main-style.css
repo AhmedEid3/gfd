@@ -1,6 +1,6 @@
 /*Global Settings*/
 body {
-  min-height: 2500px;
+  min-height: 3500px;
   font-family: 'Raleway', sans-serif;
   color: #1B1F23;
 }
@@ -278,5 +278,52 @@ Start Client Comments*/
 
 /*
 End Client Comments*/
+/*
+Start Slider Secondary*/
+.slider-secondary {
+  padding: 15rem 0 4rem;
+}
+
+.slider-secondary .carousel-inner {
+  overflow: initial;
+}
+
+.slider-secondary .carousel-caption {
+  padding-top: 0;
+  right: 0;
+  bottom: 0;
+  top: -25%;
+  left: initial;
+  z-index: 50;
+  text-align: right;
+  color: #1B1F23;
+}
+
+.slider-secondary .carousel-caption .h2 {
+  max-width: 540px;
+}
+
+.slider-secondary .carousel-caption p {
+  max-width: 400px;
+  font-size: 21px;
+  margin-bottom: 3.5rem;
+}
+
+.slider-secondary .carousel-indicators li {
+  border: 1px solid transparent;
+  background-color: #E4ECEE;
+  opacity: 1;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+}
+
+.slider-secondary .carousel-indicators li.active, .slider-secondary .carousel-indicators li:hover, .slider-secondary .carousel-indicators li:focus {
+  background-color: #2FCCF6;
+  border-color: #979797;
+}
+
+/*
+End Slider Secondary*/
 
 /*# sourceMappingURL=main-style.css.map */

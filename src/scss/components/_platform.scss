@@ -1,0 +1,29 @@
+/*
+Start Freelancing Platform*/
+%centeralize {
+  max-width: 150px;
+  margin: auto;
+}
+
+.platform {
+  text-align: center;
+
+  .fa-star {
+    color: $icon-star-color;
+  }
+
+  .upwork {
+    @extend %centeralize;
+  }
+
+  .gas {
+    @extend %centeralize;
+  }
+
+  .insight {
+    @extend %centeralize;
+  }
+}
+
+/*
+End Freelancing Platform*/

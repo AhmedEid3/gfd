@@ -1,6 +1,6 @@
 /*Global Settings*/
 body {
-  min-height: 1500px;
+  min-height: 2500px;
   font-family: 'Raleway', sans-serif;
   color: #1B1F23;
 }
@@ -205,6 +205,7 @@ Start User Interface*/
 }
 
 .user-interface .card {
+  border: none;
   margin-bottom: 2rem;
   padding: 3.5rem 0;
 }
@@ -227,5 +228,30 @@ Start User Interface*/
 
 /*
 End User Interface*/
+/*
+Start Freelancing Platform*/
+.platform .upwork, .platform .gas, .platform .insight {
+  max-width: 150px;
+  margin: auto;
+}
+
+.platform {
+  text-align: center;
+}
+
+.platform .fa-star {
+  color: #6DDE54;
+}
+
+/*
+End Freelancing Platform*/
+/*
+Start Client Comments*/
+.client-comments {
+  background-color: #23282E;
+}
+
+/*
+End Client Comments*/
 
 /*# sourceMappingURL=main-style.css.map */

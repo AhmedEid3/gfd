@@ -10,6 +10,9 @@
   }
 
   .nav-item {
+    &.active > .nav-link {
+      color : $primary-color;
+    }
     .nav-link {
       color : $font-color;
 

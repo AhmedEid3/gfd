@@ -173,6 +173,10 @@ button, .btn {
   margin-right: 2em;
 }
 
+.navbar .nav-item.active > .nav-link {
+  color: #2FCCF6;
+}
+
 .navbar .nav-item .nav-link {
   color: #1B1F23;
 }

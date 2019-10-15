@@ -49,6 +49,9 @@ h2, .h2 {
 h3, .h3 {
   font-size: $h3-font-size;
   @extend %font-bold;
+  @media (max-width: $max-lg) {
+    font-size:$h3-font-size * $ratio-font-lg;
+  }
 }
 
 h4, .h4 {

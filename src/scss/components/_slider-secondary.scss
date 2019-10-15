@@ -1,12 +1,17 @@
 /*
 Start Slider Secondary*/
-.slider-secondary{
-overflow: hidden;
+.slider-secondary {
+  overflow: hidden;
   padding: 15rem 0 4rem;
+  @media (max-width: $max-xs) {
+    padding: 4rem 0 4rem;
+  }
   .carousel-inner {
     overflow: initial;
   }
+
   .carousel-caption {
+    max-width: 60%;
     padding-top: 0;
     right: 0;
     bottom: 0;
@@ -15,32 +20,61 @@ overflow: hidden;
     z-index: 50;
     text-align: right;
     color: $font-color;
-    .h2 {
-      max-width: 540px;
+
+    @media (max-width: $max-xs) {
+      max-width: 100%;
+      position: initial;
+      right: 15%;
+      bottom: 20px;
+      left: 15%;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      text-align: center;
     }
+
     p {
       max-width: 400px;
       font-size: 21px;
       margin-bottom: 3.5rem;
+      @media (max-width: $max-med) {
+        max-width: 300px;
+        font-size: 16px;
+        margin-bottom: 1.5rem;
+      }
+      @media (max-width: $max-xs) {
+        float: none !important;
+        text-align: center;
+        max-width: 80%;
+        margin: auto;
+        margin-bottom: 1.5rem;
+      }
     }
   }
 
   .carousel-indicators {
+    @media (max-width: $max-sm) {
+      bottom: -20px;
+    }
+    @media (max-width: $max-xs) {
+      bottom: -35px;
+    }
+
     li {
-      border           : 1px solid transparent;
-      background-color : $slider-bullet-color;
-      opacity          : 1;
-      width            : 1em;
-      height           : 1em;
-      border-radius    : 50%;
+      border: 1px solid transparent;
+      background-color: $slider-bullet-color;
+      opacity: 1;
+      width: 1em;
+      height: 1em;
+      border-radius: 50%;
 
       &.active, &:hover, &:focus {
-        background-color : $primary-color;
-        border-color     : $slider-border-color;
+        background-color: $primary-color;
+        border-color: $slider-border-color;
       }
     }
   }
 
 }
+
 /*
 End Slider Secondary*/

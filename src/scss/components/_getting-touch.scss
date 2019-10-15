@@ -2,6 +2,9 @@
 Start Getting Touch*/
 .getting-touch{
   padding: 7rem 0;
+  @media (max-width: $max-sm) {
+    padding: 3rem 0;
+  }
   h2 {
     margin-bottom: 1.75rem;
   }

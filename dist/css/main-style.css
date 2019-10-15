@@ -54,6 +54,24 @@ h2, .h2 {
   font-size: 2.5rem;
 }
 
+@media (max-width: 1199.98px) {
+  h2, .h2 {
+    font-size: 2.075rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  h2, .h2 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  h2, .h2 {
+    font-size: 1.2rem;
+  }
+}
+
 h3, .h3 {
   font-size: 1.5rem;
 }
@@ -72,6 +90,18 @@ p, .p {
   font-size: 1.5rem;
   letter-spacing: 0.86px;
   line-height: 1.1;
+}
+
+@media (max-width: 1199.98px) {
+  p, .p {
+    font-size: 1.245rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  p, .p {
+    font-size: 0.96rem;
+  }
 }
 
 div, .div {
@@ -287,11 +317,23 @@ button, .btn {
   }
 }
 
+@media (max-width: 767.98px) {
+  .sponsers img {
+    padding: 1.5rem 0;
+  }
+}
+
 /*End Sponser*/
 /*
 Start User Interface*/
 .user-interface {
   padding: 100px 0;
+}
+
+@media (max-width: 767.98px) {
+  .user-interface {
+    padding: 50px 0 25px 0;
+  }
 }
 
 .user-interface h2 {
@@ -307,6 +349,12 @@ Start User Interface*/
   border: none;
   margin-bottom: 2rem;
   padding: 3.5rem 0;
+}
+
+@media (max-width: 767.98px) {
+  .user-interface .card {
+    padding: 1.5rem 0;
+  }
 }
 
 .user-interface .card img {
@@ -375,6 +423,18 @@ Start Client Comments*/
 .client-comments .p {
   font-size: 21px;
   font-weight: 700;
+}
+
+@media (max-width: 991.98px) {
+  .client-comments .p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .client-comments .p {
+    font-size: 16px;
+  }
 }
 
 /*

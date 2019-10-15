@@ -40,7 +40,15 @@ h1, .h1 {
 h2, .h2 {
   font-size: $h2-font-size;
   @extend %font-extrabold;
-
+  @media (max-width: $max-lg) {
+    font-size:$h2-font-size * $ratio-font-lg;
+  }
+  @media (max-width: $max-med) {
+    font-size:$h2-font-size * $ratio-font-med;
+  }
+  @media (max-width: $max-sm) {
+    font-size:$h2-font-size * $ratio-font-sm;
+  }
 }
 
 h3, .h3 {
@@ -61,6 +69,12 @@ p, .p {
   letter-spacing: 0.86px;
   line-height: 1.1;
   @extend %font-medium;
+  @media (max-width: $max-lg) {
+    font-size:$p-font-size * $ratio-font-lg;
+  }
+  @media (max-width: $max-sm) {
+    font-size:$p-font-size * $ratio-font-med;
+  }
 }
 
 div, .div {

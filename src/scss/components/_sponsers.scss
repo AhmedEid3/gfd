@@ -6,6 +6,9 @@
     @media (max-width: $max-med) {
       padding: 2em 0;
     }
+    @media (max-width: $max-sm) {
+      padding: 1.5rem 0;
+    }
   }
 
 }

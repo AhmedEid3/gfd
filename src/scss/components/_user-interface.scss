@@ -2,6 +2,9 @@
 Start User Interface*/
 .user-interface {
   padding: 100px 0;
+  @media (max-width: $max-sm) {
+    padding: 50px 0 25px 0;
+  }
   h2 {
     max-width: 520px;
     margin-bottom: 1rem;
@@ -13,6 +16,9 @@ Start User Interface*/
     border: none;
     margin-bottom: 2rem;
     padding: 3.5rem 0;
+    @media (max-width: $max-sm) {
+      padding: 1.5rem 0;
+    }
     img {
       margin-bottom: 1.5rem;
     }

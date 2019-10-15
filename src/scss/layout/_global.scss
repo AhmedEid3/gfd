@@ -18,14 +18,29 @@ body {
   font-weight: 400;
 }
 
+
+
 h1, .h1 {
   font-size: $h1-font-size;
   @extend %font-extrabold;
+  @media (max-width: $max-lg) {
+    font-size:$h1-font-size * $ratio-font-lg;
+  }
+  @media (max-width: $max-med) {
+    font-size:$h1-font-size * $ratio-font-med;
+  }
+  @media (max-width: $max-sm) {
+    font-size:$h1-font-size * $ratio-font-sm;
+  }
+  @media (max-width: $max-xs) {
+    font-size:$h1-font-size * $ratio-font-xs;
+  }
 }
 
 h2, .h2 {
   font-size: $h2-font-size;
   @extend %font-extrabold;
+
 }
 
 h3, .h3 {
@@ -36,6 +51,9 @@ h3, .h3 {
 h4, .h4 {
   font-size: $h4-font-size;
   @extend %font-bold;
+  @media (max-width: $max-sm) {
+    font-size:$h4-font-size * $ratio-font-lg;
+  }
 }
 
 p, .p {
@@ -49,6 +67,9 @@ div, .div {
   font-size: $div-font-size;
   line-height: 1.2;
   @extend %font-regular;
+  @media (max-width: $max-sm) {
+    font-size:$div-font-size * $ratio-font-lg;
+  }
 }
 
 span, .span {

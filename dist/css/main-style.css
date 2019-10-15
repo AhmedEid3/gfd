@@ -505,6 +505,10 @@ Start Slider Secondary*/
   }
 }
 
+.slider-secondary .carousel-indicators {
+  z-index: 51;
+}
+
 @media (max-width: 767.98px) {
   .slider-secondary .carousel-indicators {
     bottom: -20px;

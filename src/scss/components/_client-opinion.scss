@@ -26,15 +26,16 @@ Start Client Opinion*/
       padding: 25px 0;
     }
     h2 {
-      font-size: 32px;
+      font-size: 2rem;
+      margin-bottom: 13px;
       @media (max-width: $max-lg) {
-        font-size: 27px;
+        font-size: 1.68rem;
       }
       @media (max-width: $max-sm) {
-        font-size: 24px;
+        font-size: 1.5rem;
       }
       @media (max-width: $max-xs) {
-        font-size: 20px;
+        font-size: 1.25rem;
       }
     }
   }

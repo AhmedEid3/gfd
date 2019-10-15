@@ -620,29 +620,67 @@ Start Client Opinion*/
 }
 
 .client-opinion .content h2 {
-  font-size: 32px;
+  font-size: 2rem;
+  margin-bottom: 13px;
 }
 
 @media (max-width: 1199.98px) {
   .client-opinion .content h2 {
-    font-size: 27px;
+    font-size: 1.68rem;
   }
 }
 
 @media (max-width: 767.98px) {
   .client-opinion .content h2 {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 }
 
 @media (max-width: 575.98px) {
   .client-opinion .content h2 {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 }
 
 /*
 End Client Opinion*/
+/*
+Start GD*/
+.gd {
+  padding: 70px 0;
+}
+
+@media (max-width: 767.98px) {
+  .gd {
+    padding: 35px 0;
+  }
+}
+
+.gd section h2 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+@media (max-width: 1199.98px) {
+  .gd section h2 {
+    font-size: 1.68rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .gd section h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .gd section h2 {
+    font-size: 1.25rem;
+  }
+}
+
+/*
+End GD*/
 /*
 Start Footer*/
 .footer {

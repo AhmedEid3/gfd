@@ -19,7 +19,7 @@ const paths = {
         imgs: "dist/images"
     },
     src: {
-        html: "src/template/index.html",
+        html: "src/template/*.html",
         scss: "src/scss/**/*.scss",
         js: "src/js/**/*.js",
         imgs: ["src/images/**/*.*"]
@@ -69,32 +69,6 @@ function cssMin() {
         .pipe(gulp.dest(paths.dist.css))
         .pipe(connect.reload())
         .pipe(notify("CSS Min Task Finished"));
-}
-
-// Bootstrap responsive font Task
-function bootstrap() {
-    return gulp
-        .src("node_modules/bootstrap/scss/**/*.scss")
-        .pipe(sourcemaps.init())
-        .pipe(sass({outputStyle: "expanded"}))
-        //.pipe(autoprefixer("last 2 version"))
-        .pipe(concat("bootstrap.css"))
-        .pipe(sourcemaps.write("."))
-        .pipe(gulp.dest(paths.dist.css))
-        .pipe(connect.reload())
-        .pipe(notify("bootstrap Task Finished"));
-}
-
-// Bootstrap Min Task
-function bootstrap_min() {
-    return gulp
-        .src("node_modules/bootstrap/scss/**/*.scss")
-        .pipe(sass({outputStyle: "compressed"}))
-        //.pipe(autoprefixer("last 2 version"))
-        .pipe(concat("bootstrap.min.css"))
-        .pipe(gulp.dest(paths.dist.css))
-        .pipe(connect.reload())
-        .pipe(notify("bootstrap Min Task Finished"));
 }
 
 // Js Task
@@ -153,8 +127,6 @@ exports.css = css;
 exports.cssMin = cssMin;
 exports.js = js;
 exports.images = images;
-exports.bootstrap = bootstrap;
-exports.bootstrap_min = bootstrap_min;
 
 // Default Task
 exports.default = gulp.parallel(connects, watch, html, css, cssMin, js, images);

@@ -1,8 +1,16 @@
 /*Global Settings*/
 body {
-  min-height: 4000px;
   font-family: 'Raleway', sans-serif;
   color: #1B1F23;
+}
+
+/*Text-colors*/
+.text-main-color {
+  color: #2FCCF6;
+}
+
+.text-muted {
+  color: #BEC1C5 !important;
 }
 
 /*Font-size*/
@@ -121,15 +129,6 @@ span, .span {
 
 button, .btn {
   font-size: 1rem;
-}
-
-/*Text-colors*/
-.text-main-color {
-  color: #2FCCF6;
-}
-
-.text-muted {
-  color: #BEC1C5 !important;
 }
 
 .btn {

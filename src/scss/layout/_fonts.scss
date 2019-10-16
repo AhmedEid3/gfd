@@ -1,34 +1,42 @@
-
-/*Font-size*/
-%font-extrabold {
+/*Font-weight*/
+%font-extrabold,
+.font-weight-extra-bold {
   font-weight: 800;
 }
-%font-bold{
+
+%font-bold {
   font-weight: 700;
 }
-%font-medium{
-  font-weight: 500;
+
+%font-semi-bold,
+.font-weight-semi-bold {
+  font-weight: $font-semi-bold;
 }
+
+%font-medium,
+.font-weight-medium {
+  font-weight: $font-medium;
+}
+
 %font-regular {
   font-weight: 400;
 }
 
-
-
+// Font Sizes
 h1, .h1 {
   font-size: $h1-font-size;
   @extend %font-extrabold;
   @media (max-width: $max-lg) {
-    font-size:$h1-font-size * $ratio-font-lg;
+    font-size: $h1-font-size * $ratio-font-lg;
   }
   @media (max-width: $max-med) {
-    font-size:$h1-font-size * $ratio-font-med;
+    font-size: $h1-font-size * $ratio-font-med;
   }
   @media (max-width: $max-sm) {
-    font-size:$h1-font-size * $ratio-font-sm;
+    font-size: $h1-font-size * $ratio-font-sm;
   }
   @media (max-width: $max-xs) {
-    font-size:$h1-font-size * $ratio-font-xs;
+    font-size: $h1-font-size * $ratio-font-xs;
   }
 }
 
@@ -36,13 +44,13 @@ h2, .h2 {
   font-size: $h2-font-size;
   @extend %font-extrabold;
   @media (max-width: $max-lg) {
-    font-size:$h2-font-size * $ratio-font-lg;
+    font-size: $h2-font-size * $ratio-font-lg;
   }
   @media (max-width: $max-med) {
-    font-size:$h2-font-size * $ratio-font-med;
+    font-size: $h2-font-size * $ratio-font-med;
   }
   @media (max-width: $max-sm) {
-    font-size:$h2-font-size * $ratio-font-sm;
+    font-size: $h2-font-size * $ratio-font-sm;
   }
 }
 
@@ -50,7 +58,7 @@ h3, .h3 {
   font-size: $h3-font-size;
   @extend %font-bold;
   @media (max-width: $max-lg) {
-    font-size:$h3-font-size * $ratio-font-lg;
+    font-size: $h3-font-size * $ratio-font-lg;
   }
 }
 
@@ -58,7 +66,7 @@ h4, .h4 {
   font-size: $h4-font-size;
   @extend %font-bold;
   @media (max-width: $max-sm) {
-    font-size:$h4-font-size * $ratio-font-lg;
+    font-size: $h4-font-size * $ratio-font-lg;
   }
 }
 
@@ -68,10 +76,10 @@ p, .p {
   line-height: 1.1;
   @extend %font-medium;
   @media (max-width: $max-lg) {
-    font-size:$p-font-size * $ratio-font-lg;
+    font-size: $p-font-size * $ratio-font-lg;
   }
   @media (max-width: $max-sm) {
-    font-size:$p-font-size * $ratio-font-med;
+    font-size: $p-font-size * $ratio-font-med;
   }
 }
 
@@ -80,7 +88,7 @@ div, .div {
   line-height: 1.2;
   @extend %font-regular;
   @media (max-width: $max-sm) {
-    font-size:$div-font-size * $ratio-font-lg;
+    font-size: $div-font-size * $ratio-font-lg;
   }
 }
 

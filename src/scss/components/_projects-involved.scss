@@ -1,0 +1,62 @@
+/*
+Start Projects Involved*/
+
+.projects-involved {
+  padding: 70px 0;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 60px;
+    @media (max-width: $max-lg) {
+      font-size: 1.68rem;
+    }
+    @media (max-width: $max-sm) {
+      font-size: 1.5rem;
+      margin-bottom: 30px;
+    }
+    @media (max-width: $max-xs) {
+      font-size: 1.25rem;
+    }
+  }
+
+  // navbar project
+  ul {
+    li {
+      a {
+        display: inline-block;
+        margin: 5px 0;
+        color: $text-btn-project;
+        background-color: $slider-bullet-color;
+        border-radius: 5px;
+        padding: 10px 13px;
+        border: 1px solid transparent;
+        transition: 0.2s all ease-in-out;
+
+        &.active,
+        &:hover,
+        &:active,
+        &:focus {
+          text-decoration: none;
+          color: #ffffff;
+          background-color: $primary-color;
+          border-color: $primary-color;
+        }
+      }
+
+    }
+  }
+
+  //content project
+  .content {
+    min-height: 120px;
+    margin-top: 30px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 .5rem 2rem rgba(0,0,0,.15)!important;
+  }
+}
+
+/*
+End Projects Involved*/

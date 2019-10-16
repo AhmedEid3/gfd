@@ -13,8 +13,13 @@ body {
   color: #BEC1C5 !important;
 }
 
-/*Font-size*/
-h1, .h1, h2, .h2 {
+.text-grey {
+  color: #676B70;
+}
+
+/*Font-weight*/
+h1, .h1, h2, .h2,
+.font-weight-extra-bold {
   font-weight: 800;
 }
 
@@ -22,7 +27,13 @@ h3, .h3, h4, .h4, button, .btn {
   font-weight: 700;
 }
 
-p, .p {
+
+.font-weight-semi-bold {
+  font-weight: 600;
+}
+
+p, .p,
+.font-weight-medium {
   font-weight: 500;
 }
 
@@ -151,6 +162,8 @@ button, .btn {
   color: #fff;
   background-color: #2FCCF6;
   border-color: #2FCCF6;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
 }
 
 .btn-sm {
@@ -736,6 +749,74 @@ Start Portfolio*/
 
 /*
 End Portfolio*/
+/*
+Start Projects Involved*/
+.projects-involved {
+  padding: 70px 0;
+}
+
+.projects-involved h2 {
+  font-size: 2rem;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 1199.98px) {
+  .projects-involved h2 {
+    font-size: 1.68rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .projects-involved h2 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .projects-involved h2 {
+    font-size: 1.25rem;
+  }
+}
+
+.projects-involved ul li a {
+  display: inline-block;
+  margin: 5px 0;
+  color: #3C3F43;
+  background-color: #E4ECEE;
+  border-radius: 5px;
+  padding: 10px 13px;
+  border: 1px solid transparent;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+}
+
+.projects-involved ul li a.active, .projects-involved ul li a:hover, .projects-involved ul li a:active, .projects-involved ul li a:focus {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #2FCCF6;
+  border-color: #2FCCF6;
+}
+
+.projects-involved .content {
+  min-height: 120px;
+  margin-top: 30px;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.15) !important;
+          box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.15) !important;
+}
+
+/*
+End Projects Involved*/
 /*
 Start Footer*/
 .footer {

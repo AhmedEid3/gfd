@@ -878,6 +878,40 @@ Start Testimonial Body*/
   }
 }
 
+.testimonial-body .content {
+  padding: 40px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.15) !important;
+          box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.15) !important;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .testimonial-body .content {
+    padding: 30px 25px;
+  }
+}
+
+.testimonial-body .content img.person {
+  margin-right: 14px;
+}
+
+.testimonial-body .content p {
+  line-height: 23px;
+  margin-bottom: 24px;
+}
+
+@media (min-width: 576px) {
+  .testimonial-body .content p {
+    max-width: 300px;
+  }
+}
+
+.testimonial-body .content .country {
+  font-size: 0.75rem;
+  color: #676B70;
+}
+
 /*
 End Testimonial Body*/
 /*

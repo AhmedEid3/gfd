@@ -2,7 +2,7 @@
 Start Testimonial Body*/
 .testimonial-body {
   padding: 70px 0 115px;
-
+  // head
   h2 {
     font-size: 2rem;
     margin-bottom: 60px;
@@ -15,6 +15,34 @@ Start Testimonial Body*/
     }
     @media (max-width: $max-xs) {
       font-size: 1.25rem;
+    }
+  }
+
+  // Content
+  .content {
+    padding: 40px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 .5rem 2rem rgba(0, 0, 0, .15) !important;
+    @media (min-width: $min-lg) and (max-width: $max-lg) {
+      padding: 30px 25px;
+    }
+
+    img.person {
+      margin-right: 14px;
+    }
+
+    p {
+      line-height: 23px;
+      margin-bottom: 24px;
+      @media (min-width: $min-sm) {
+        max-width: 300px;
+      }
+    }
+
+    .country {
+      font-size: 0.75rem;
+      color: $text-grey;
     }
   }
 }

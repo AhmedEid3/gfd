@@ -1,0 +1,40 @@
+/*
+Start Portfolio*/
+$height-img: 420px;
+$ratio-lg: 0.83;
+$ratio-med: 0.64;
+$ratio-sm: 0.48;
+$ratio-xs: 0.35;
+.portfolio-header{
+  color: #ffffff;
+  position: relative;
+  height: $height-img;
+  background-image: url(../images/portfolio-google.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  //background-attachment: fixed;
+  background-size: cover;
+  @media (max-width: $max-lg) {
+    height: $height-img * $ratio-lg;
+  }
+  @media (max-width: $max-med) {
+    height: $height-img * $ratio-med;
+  }
+  @media (max-width: $max-sm) {
+    height: $height-img * $ratio-sm;
+  }
+  @media (max-width: $max-xs) {
+    height: $height-img * $ratio-xs;
+  }
+
+  .overlay {
+    @include overlay;
+  }
+  .content {
+    height: inherit;
+  }
+
+}
+
+/*
+End Portfolio*/

@@ -6,6 +6,8 @@
 
 @import "components/button";
 @import "components/navbar";
+
+// Home Page
 @import "components/home-slider";
 @import "components/sponsers";
 @import "components/user-interface";
@@ -14,9 +16,12 @@
 @import "components/slider-secondary";
 @import "components/getting-touch";
 
+// About Page
 @import "components/client-opinion";
 @import "components/gd";
 
+// Portfolio Page
+@import "components/portfolio-header";
 
 
 @import "layout/footer";

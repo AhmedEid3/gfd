@@ -47,7 +47,8 @@ Start Projects Involved*/
   }
 
   //content project
-  .content {
+  .content, .content-locked {
+    position: relative;
     min-height: 120px;
     margin-top: 30px;
     border-radius: 8px;
@@ -55,6 +56,40 @@ Start Projects Involved*/
     justify-content: center;
     align-items: center;
     box-shadow: 0 .5rem 2rem rgba(0,0,0,.15)!important;
+    transition: 0.2s ease-in-out;
+    &:hover,
+    &:focus{
+      cursor: pointer;
+      box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+    }
+
+  }
+  .content-locked:hover {
+    cursor:not-allowed;
+  }
+  .content-locked:before {
+    content: "";
+    position: absolute;
+    top:0;
+    right: 0;
+    display: inline-block;
+    border-style: solid;
+    border-color: transparent;
+    border-top-color: $slider-bullet-color;
+    border-right-color: $slider-bullet-color;
+    border-width: 25px;
+    border-top-right-radius: 8px;
+    z-index: 1;
+  }
+  .content-locked:after {
+    content: "\f023";
+    font-family: 'FontAwesome';
+    font-size: 1rem;
+    color: $text-grey;
+    position: absolute;
+    top:5px;
+    right: 10px;
+    z-index: 2;
   }
 }
 

@@ -798,7 +798,8 @@ Start Projects Involved*/
   border-color: #2FCCF6;
 }
 
-.projects-involved .content {
+.projects-involved .content, .projects-involved .content-locked {
+  position: relative;
   min-height: 120px;
   margin-top: 30px;
   border-radius: 8px;
@@ -813,6 +814,44 @@ Start Projects Involved*/
           align-items: center;
   -webkit-box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.15) !important;
           box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.15) !important;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.projects-involved .content:hover, .projects-involved .content:focus, .projects-involved .content-locked:hover, .projects-involved .content-locked:focus {
+  cursor: pointer;
+  -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+          box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+
+.projects-involved .content-locked:hover {
+  cursor: not-allowed;
+}
+
+.projects-involved .content-locked:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  border-style: solid;
+  border-color: transparent;
+  border-top-color: #E4ECEE;
+  border-right-color: #E4ECEE;
+  border-width: 25px;
+  border-top-right-radius: 8px;
+  z-index: 1;
+}
+
+.projects-involved .content-locked:after {
+  content: "\f023";
+  font-family: 'FontAwesome';
+  font-size: 1rem;
+  color: #676B70;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  z-index: 2;
 }
 
 /*

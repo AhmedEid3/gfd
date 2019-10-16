@@ -2,9 +2,10 @@
 Start Portfolio*/
 $height-img: 420px;
 
-.portfolio-header{
+.portfolio-header, .testimonials-header{
   color: #ffffff;
   position: relative;
+  margin-top: 30px;
   height: $height-img;
   background-image: url(../images/portfolio-google.png);
   background-position: center center;
@@ -24,9 +25,9 @@ $height-img: 420px;
     height: $height-img * $ratio-xs;
   }
 
-  .overlay {
-    @include overlay;
-  }
+  //.overlay {
+  //  @include overlay;
+  //}
   .content {
     height: inherit;
   }

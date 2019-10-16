@@ -700,9 +700,10 @@ Start GD*/
 End GD*/
 /*
 Start Portfolio*/
-.portfolio-header {
+.portfolio-header, .testimonials-header {
   color: #ffffff;
   position: relative;
+  margin-top: 30px;
   height: 420px;
   background-image: url(../images/portfolio-google.png);
   background-position: center center;
@@ -711,39 +712,30 @@ Start Portfolio*/
 }
 
 @media (max-width: 1199.98px) {
-  .portfolio-header {
+  .portfolio-header, .testimonials-header {
     height: 348.6px;
   }
 }
 
 @media (max-width: 991.98px) {
-  .portfolio-header {
+  .portfolio-header, .testimonials-header {
     height: 268.8px;
   }
 }
 
 @media (max-width: 767.98px) {
-  .portfolio-header {
+  .portfolio-header, .testimonials-header {
     height: 201.6px;
   }
 }
 
 @media (max-width: 575.98px) {
-  .portfolio-header {
+  .portfolio-header, .testimonials-header {
     height: 147px;
   }
 }
 
-.portfolio-header .overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.portfolio-header .content {
+.portfolio-header .content, .testimonials-header .content {
   height: inherit;
 }
 
@@ -856,6 +848,38 @@ Start Projects Involved*/
 
 /*
 End Projects Involved*/
+/*
+Start Testimonial Body*/
+.testimonial-body {
+  padding: 70px 0 115px;
+}
+
+.testimonial-body h2 {
+  font-size: 2rem;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 1199.98px) {
+  .testimonial-body h2 {
+    font-size: 1.68rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .testimonial-body h2 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .testimonial-body h2 {
+    font-size: 1.25rem;
+  }
+}
+
+/*
+End Testimonial Body*/
 /*
 Start Footer*/
 .footer {

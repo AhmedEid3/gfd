@@ -224,26 +224,44 @@ button, .btn {
 /* End Navbar */
 /*Start Home Slider*/
 .home-slider {
-  position: relative;
   overflow: hidden;
+  height: 899px;
+  background-image: url(../images/gb.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 1199.98px) {
+  .home-slider {
+    height: 746.17px;
+  }
 }
 
 @media (max-width: 991.98px) {
   .home-slider {
-    -webkit-box-align: start !important;
-        -ms-flex-align: start !important;
-            align-items: start !important;
+    height: 575.36px;
   }
 }
 
-.home-slider > div:first-child {
-  position: absolute;
+@media (max-width: 767.98px) {
+  .home-slider {
+    height: 431.52px;
+  }
 }
 
 @media (max-width: 575.98px) {
-  .home-slider > div:first-child {
-    position: initial;
+  .home-slider {
+    background: none;
   }
+}
+
+.home-slider .container {
+  height: inherit;
+}
+
+.home-slider .container .row {
+  height: inherit;
 }
 
 .home-slider .carousel .carousel-indicators {
@@ -303,6 +321,12 @@ button, .btn {
 @media (max-width: 991.98px) {
   .home-slider .carousel .carousel-item .carousel-caption {
     padding-top: 50px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .home-slider .carousel .carousel-item .carousel-caption {
+    text-align: center !important;
   }
 }
 

@@ -1,15 +1,29 @@
 /*Start Home Slider*/
 .home-slider {
-  position: relative;
   overflow: hidden;
+  $height-img: 899px;
+  height: $height-img;
+  background-image: url(../images/gb.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @media (max-width: $max-lg) {
+    height: $height-img * $ratio-lg;
+  }
   @media (max-width: $max-med) {
-    align-items: start !important;
+    height: $height-img * $ratio-med;
+  }
+  @media (max-width: $max-sm) {
+    height: $height-img * $ratio-sm;
+  }
+  @media (max-width: $max-xs) {
+    background: none;
   }
 
-  & > div:first-child {
-    position: absolute;
-    @media (max-width: $max-xs) {
-      position: initial;
+  .container{
+    height: inherit;
+    .row {
+      height: inherit;
     }
   }
 
@@ -56,6 +70,9 @@
         color: $font-color;
         @media (max-width: $max-med) {
           padding-top: 50px;
+        }
+        @media (max-width: $max-sm) {
+          text-align: center!important;
         }
         @media (max-width: $max-xs) {
           padding-top: 20px;

@@ -1,0 +1,34 @@
+/*
+Start Portfolio item*/
+$height-img: 420px;
+
+.portfolio-header-item{
+  color: #ffffff;
+  position: relative;
+  margin-top: 30px;
+  height: $height-img;
+  background-image: url(../images/mercedes-portfolio.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @media (max-width: $max-lg) {
+    height: $height-img * $ratio-lg;
+  }
+  @media (max-width: $max-med) {
+    height: $height-img * $ratio-med;
+  }
+  @media (max-width: $max-sm) {
+    height: $height-img * $ratio-sm;
+  }
+  @media (max-width: $max-xs) {
+    height: $height-img * $ratio-xs;
+  }
+
+  .content {
+    height: inherit;
+  }
+
+}
+
+/*
+End Portfolio item*/

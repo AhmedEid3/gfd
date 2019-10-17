@@ -5,13 +5,10 @@ Start Client Opinion*/
   color: #ffffff;
   position: relative;
 
-  .overlay {
-    @include overlay;
-  }
-
   img {
     min-height: 200px;
   }
+
   .content {
     position: absolute;
     top: 0;
@@ -25,6 +22,7 @@ Start Client Opinion*/
     @media (max-width: $max-med) {
       padding: 25px 0;
     }
+
     h2 {
       font-size: 2rem;
       margin-bottom: 13px;

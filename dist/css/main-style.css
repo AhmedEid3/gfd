@@ -602,15 +602,6 @@ Start Client Opinion*/
   position: relative;
 }
 
-.client-opinion .overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
 .client-opinion img {
   min-height: 200px;
 }
@@ -848,6 +839,49 @@ Start Projects Involved*/
 
 /*
 End Projects Involved*/
+/*
+Start Portfolio item*/
+.portfolio-header-item {
+  color: #ffffff;
+  position: relative;
+  margin-top: 30px;
+  height: 420px;
+  background-image: url(../images/mercedes-portfolio.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 1199.98px) {
+  .portfolio-header-item {
+    height: 348.6px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .portfolio-header-item {
+    height: 268.8px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .portfolio-header-item {
+    height: 201.6px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .portfolio-header-item {
+    height: 147px;
+  }
+}
+
+.portfolio-header-item .content {
+  height: inherit;
+}
+
+/*
+End Portfolio item*/
 /*
 Start Testimonial Body*/
 .testimonial-body {

@@ -883,6 +883,137 @@ Start Portfolio item*/
 /*
 End Portfolio item*/
 /*
+Start Mobility*/
+.mobility {
+  padding: 67px 0 120px;
+}
+
+@media (max-width: 767.98px) {
+  .mobility {
+    padding: 30px 0 50px;
+  }
+}
+
+.mobility h2 {
+  margin-bottom: 32px;
+}
+
+@media (min-width: 768px) {
+  .mobility h2 {
+    max-width: 333px;
+  }
+}
+
+.mobility p {
+  text-align: justify;
+  line-height: 25px;
+}
+
+@media (min-width: 768px) {
+  .mobility p {
+    max-width: 305px;
+  }
+}
+
+.mobility .mt-25 {
+  margin-top: -27%;
+}
+
+@media (max-width: 1199.98px) {
+  .mobility .mt-25 {
+    margin-top: -32%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .mobility .mt-25 {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .mobility img {
+    display: block;
+    max-width: 100%;
+    margin: auto;
+  }
+}
+
+/*
+End Mobility*/
+/*
+Start UXD Comment*/
+.uxd-comment {
+  background: #F3F6F6;
+}
+
+.uxd-comment img {
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .uxd-comment img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .uxd-comment img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.uxd-comment .content {
+  padding-left: 30px;
+}
+
+.uxd-comment .content p {
+  line-height: 24px;
+  margin-bottom: 30px;
+  max-width: 370px;
+}
+
+/*
+End UXD Comment*/
+/*
+Start Gallery portfolio*/
+.gallery-portfolio {
+  padding-top: 100px;
+}
+
+@media (max-width: 767.98px) {
+  .gallery-portfolio {
+    padding-top: 50px;
+  }
+}
+
+.gallery-portfolio img {
+  display: block;
+  margin: auto;
+  margin-bottom: 25px;
+}
+
+.gallery-portfolio .btn {
+  margin-top: 80px;
+  margin-bottom: 100px;
+  padding: 0.7rem 1.125rem;
+}
+
+@media (max-width: 767.98px) {
+  .gallery-portfolio .btn {
+    display: block;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+}
+
+/*
+End Gallery portfolio*/
+/*
 Start Testimonial Body*/
 .testimonial-body {
   padding: 70px 0 115px;

@@ -1,30 +1,16 @@
-/*
-* Filter plugin init
-* */
-var containerEl = document.querySelector('.container-filter');
-var mixer = mixitup(containerEl);
 
 $(document).ready(function () {
-    // start with specific category
-    mixer.toggleOn('.mobile-apps');
-
-    // add active class
-    $('.nav-projects li').click(function () {
-        $(this).addClass('active').siblings().removeClass('active');
+    // Init Nice Scroll
+    $("body").niceScroll({
+        cursorcolor: "#2FCCF6",
+        cursorborder: "1px solid #2FCCF6",
+        cursorwidth: "10px",
+        cursorborderradius: "3px",
+        cursorminheight: "64"
     });
 
-    // show and hide locked projects
-    $('#toggle-lock-projects').click(function () {
-        var check_box = $(this);
-
-        if ($(check_box).is(":checked")) {
-            $('.lock-projects').fadeOut('slow');
-
-        } else {
-            $('.lock-projects').fadeIn('slow');
-        }
-    });
-
+    // Init Smooth Scroll
+    var scroll = new SmoothScroll('a[href*="#"]');
 });
 
 

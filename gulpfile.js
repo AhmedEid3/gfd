@@ -75,7 +75,7 @@ function cssMin() {
 function js() {
     return gulp
         .src(paths.src.js)
-        .pipe(concat("app.min.js"))
+        //.pipe(concat("app.min.js"))
         .pipe(uglify())
         .pipe(gulp.dest(paths.dist.js))
         .pipe(connect.reload())

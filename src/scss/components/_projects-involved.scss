@@ -22,7 +22,13 @@ Start Projects Involved*/
   // navbar project
   ul {
     li {
-      a {
+      &.active button{
+        text-decoration: none;
+        color: #ffffff;
+        background-color: $primary-color;
+        border-color: $primary-color;
+      }
+      button {
         display: inline-block;
         margin: 5px 0;
         color: $text-btn-project;
@@ -31,8 +37,8 @@ Start Projects Involved*/
         padding: 10px 13px;
         border: 1px solid transparent;
         transition: 0.2s all ease-in-out;
+        font-size: $span-font-size;
 
-        &.active,
         &:hover,
         &:active,
         &:focus {

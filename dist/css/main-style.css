@@ -762,7 +762,14 @@ Start Projects Involved*/
   }
 }
 
-.projects-involved ul li a {
+.projects-involved ul li.active button {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #2FCCF6;
+  border-color: #2FCCF6;
+}
+
+.projects-involved ul li button {
   display: inline-block;
   margin: 5px 0;
   color: #3C3F43;
@@ -772,9 +779,10 @@ Start Projects Involved*/
   border: 1px solid transparent;
   -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
+  font-size: 0.875rem;
 }
 
-.projects-involved ul li a.active, .projects-involved ul li a:hover, .projects-involved ul li a:active, .projects-involved ul li a:focus {
+.projects-involved ul li button:hover, .projects-involved ul li button:active, .projects-involved ul li button:focus {
   text-decoration: none;
   color: #ffffff;
   background-color: #2FCCF6;

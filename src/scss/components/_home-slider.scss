@@ -17,13 +17,20 @@
     height: $height-img * $ratio-sm;
   }
   @media (max-width: $max-xs) {
-    //background: none;
+    background-size: contain;
+    height: auto;
   }
 
   .container{
     height: inherit;
+    @media (max-width: $max-xs) {
+      height: initial;
+    }
     .row {
       height: inherit;
+      @media (max-width: $max-xs) {
+        height: initial;
+      }
     }
   }
 

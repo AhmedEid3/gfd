@@ -258,12 +258,31 @@ button, .btn {
   }
 }
 
+@media (max-width: 575.98px) {
+  .home-slider {
+    background-size: contain;
+    height: auto;
+  }
+}
+
 .home-slider .container {
   height: inherit;
 }
 
+@media (max-width: 575.98px) {
+  .home-slider .container {
+    height: initial;
+  }
+}
+
 .home-slider .container .row {
   height: inherit;
+}
+
+@media (max-width: 575.98px) {
+  .home-slider .container .row {
+    height: initial;
+  }
 }
 
 .home-slider .carousel .carousel-indicators {

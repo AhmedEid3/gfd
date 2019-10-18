@@ -258,12 +258,6 @@ button, .btn {
   }
 }
 
-@media (max-width: 575.98px) {
-  .home-slider {
-    background: none;
-  }
-}
-
 .home-slider .container {
   height: inherit;
 }

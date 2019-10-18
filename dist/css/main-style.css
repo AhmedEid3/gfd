@@ -927,24 +927,32 @@ Start Mobility*/
 }
 
 .mobility h2 {
+  font-size: 2rem;
   margin-bottom: 32px;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 1199.98px) {
   .mobility h2 {
-    max-width: 333px;
+    font-size: 1.60rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .mobility h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .mobility h2 {
+    font-size: 1.25rem;
   }
 }
 
 .mobility p {
+  font-size: 1rem;
   text-align: justify;
   line-height: 25px;
-}
-
-@media (min-width: 768px) {
-  .mobility p {
-    max-width: 305px;
-  }
 }
 
 .mobility .mt-25 {

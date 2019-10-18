@@ -1,4 +1,6 @@
 /* Start Navbar */
+
+
 .navbar {
   padding : 2.25em 1em 0;
   @media (max-width : $max-sm) {
@@ -23,8 +25,9 @@
       }
 
       @media (max-width : $max-sm) {
-        padding-top    : 1em;
-        padding-bottom : 0;
+        padding-top: 2rem;
+        padding-bottom: 0;
+        font-size: 1rem;
       }
     }
   }
@@ -38,10 +41,15 @@
       &:hover {
         color : $primary-color;
       }
+
+      @media (max-width : $max-sm) {
+        padding: 0.5em;
+      }
     }
 
     @media (max-width : $max-sm) {
-      margin-top : 20px;
+      margin-top: 2rem;
+      font-size: 1.1rem;
     }
   }
 

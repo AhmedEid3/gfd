@@ -148,35 +148,6 @@ button, .btn {
   font-size: 1rem;
 }
 
-/*
-Headroom Lib
-*/
-.headroom {
-  will-change: transform;
-  -webkit-transition: -webkit-transform 200ms linear;
-  transition: -webkit-transform 200ms linear;
-  transition: transform 200ms linear;
-  transition: transform 200ms linear, -webkit-transform 200ms linear;
-}
-
-.headroom--pinned {
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%);
-}
-
-.headroom--unpinned {
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
-}
-
-.headroom--pinned {
-  display: block;
-}
-
-.headroom--unpinned {
-  display: none;
-}
-
 .btn {
   padding: 0.7rem 2rem;
   border-radius: 2rem;
@@ -229,8 +200,9 @@ Headroom Lib
 
 @media (max-width: 767.98px) {
   .navbar .nav-item .nav-link {
-    padding-top: 1em;
+    padding-top: 2rem;
     padding-bottom: 0;
+    font-size: 1rem;
   }
 }
 
@@ -245,8 +217,15 @@ Headroom Lib
 }
 
 @media (max-width: 767.98px) {
+  .navbar .social .fa {
+    padding: 0.5em;
+  }
+}
+
+@media (max-width: 767.98px) {
   .navbar .social {
-    margin-top: 20px;
+    margin-top: 2rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -1207,34 +1186,5 @@ Start Footer*/
 
 /*
 End Footer*/
-
-/*
-Headroom Lib
-*/
-.headroom {
-  will-change: transform;
-  -webkit-transition: -webkit-transform 200ms linear;
-  transition: -webkit-transform 200ms linear;
-  transition: transform 200ms linear;
-  transition: transform 200ms linear, -webkit-transform 200ms linear;
-}
-
-.headroom--pinned {
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%);
-}
-
-.headroom--unpinned {
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
-}
-
-.headroom--pinned {
-  display: block;
-}
-
-.headroom--unpinned {
-  display: none;
-}
 
 /*# sourceMappingURL=main-style.css.map */

@@ -1,5 +1,5 @@
 /*
-* Filter plugin init
+* Init Filter plugin
 * */
 var containerEl = document.querySelector('.container-filter');
 var mixer = mixitup(containerEl);

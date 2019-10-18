@@ -68,6 +68,14 @@
           background-color: $primary-color;
           border-color: $slider-border-color;
         }
+
+        @media (max-width: $max-xs) {
+          width: 15px;
+          height: 15px;
+          margin-right: 2px;
+          margin-left: 2px;
+        }
+
       }
     }
 

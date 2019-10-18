@@ -334,6 +334,15 @@ button, .btn {
   border-color: #979797;
 }
 
+@media (max-width: 575.98px) {
+  .home-slider .carousel .carousel-indicators li {
+    width: 15px;
+    height: 15px;
+    margin-right: 2px;
+    margin-left: 2px;
+  }
+}
+
 .home-slider .carousel .carousel-item .carousel-caption {
   position: static;
   color: #1B1F23;
